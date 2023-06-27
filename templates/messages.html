@@ -1,0 +1,30 @@
+{% extends "exclusive_home.html" %}
+
+{% block footer %}
+<div action="messages">
+<div class="container" id="mid">
+    <div class="white">
+    <div class="w3-panel w3-round-large w3-pale-blue w3-animate-opacity">
+      <h1>MESSAGES</h1>
+    </div>
+    <br>
+    
+    <table class="table">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in range(loop) %}
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ msgs[i][0] }}</td>
+      </tr>
+    {% endfor %}  
+    </tbody>
+  </table>
+    
+</div>
+{% endblock %}

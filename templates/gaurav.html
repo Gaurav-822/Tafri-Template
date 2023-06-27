@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div action="/gaurav">
+
+  <div class="container">
+  <div class="w3-animate-opacity white">
+    <h1>GAURAV BHUSHAN KUMAR</h1>
+    <div class="col-md-4" id="sid">
+      <div class="thumbnail">
+        <a href="/static/profiles/gaurav.jpg">
+          <img src="/static/profiles/gaurav.jpg" class="img-responsive" alt="GBK" style="width:100%">
+          <div class="caption">
+            <h3><a style="text-decoration: none;">Creator of this Space</a></h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="container">
+  <div class="white">
+  <div class="w3-panel w3-round-large w3-pale-blue w3-animate-opacity">
+    <h1>NICE PICTURES OF ME</h1>
+  </div>
+  <p><a style="opacity: 0.75; text-decoration: none; color: bisque;">Click on the images to enlarge them.</a></p>
+  </div>
+</br>
+
+{% for i in range(1, 4) %}
+<div class="row">
+    <div class="col-md-4">
+
+      <div class="thumbnail">
+        <a href="/static/pics/gaurav/{{i}}.jpg">
+          <img src="/static/pics/gaurav/{{i}}.jpg" alt="gaurav" style="width:100%">
+        </a>
+      </div>
+
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

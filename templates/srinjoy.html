@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div action="/srinjoy">
+
+  <div class="container">
+  <div class="w3-animate-opacity white">
+    <h1>Srinjoy</h1>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/static/profiles/srinjoy.png">
+          <img src="/static/profiles/srinjoy.png" class="img-responsive" alt="Srinjoy" style="width:100%">
+          <div class="caption">
+            <h3><a style="text-decoration: none;">Srinjoy</a></h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="container">
+  <div class="white">
+  <div class="w3-panel w3-round-large w3-pale-blue w3-animate-opacity">
+    <h1>EXCLUSIVE PICTURES OF Srinjoy</h1>
+  </div>
+  <p><a style="opacity: 0.75; text-decoration: none; color: bisque;">Click on the images to enlarge them.</a></p>
+  </div>
+</br>
+
+{% for i in range(1, 3) %}
+<div class="row">
+    <div class="col-md-4">
+
+      <div class="thumbnail">
+        <a href="/static/pics/srinjoy/{{i}}.jpg">
+          <img src="/static/pics/srinjoy/{{i}}.jpg" alt="Dada" style="width:100%">
+        </a>
+      </div>
+
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

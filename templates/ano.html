@@ -1,0 +1,19 @@
+{% extends "general_home.html" %}
+
+{% block login %}
+<div class="w3-panel">
+    <h2>Hey !</h2><h4>Connect with us with sending us messages with complete anonymity</h4>
+  </div>
+  <div style="width: 100%;">
+    <div class="w3-panel">
+      <form action="/content" method="post">
+      <div class="form-group">
+        <textarea autofocus class="form-control" rows="5" id="msg" name="msg" placeholder="Send Us Anonymous Messages ;)"></textarea>
+      </div>
+      <div class="w3-panel">
+        <button class="w3-button w3-round-large w3-pale-blue" type="send">Send :)</button>
+      </div>
+    </form>
+    </div>
+  </div>
+{% endblock %}

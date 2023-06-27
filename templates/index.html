@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="container">
+  <div class="white">
+  <div class="w3-panel w3-round-large w3-2019-sweet-corn w3-animate-opacity">
+    <h1>TaFri</h1>
+  </div>
+  <br>
+  
+  <div class="w3-animate-zoom">
+    <img class="img-responsive" src="/static/pics/tafri_group_pic.jpg" alt="group_pic">
+    {% if session["user_id"] and req == 1 %}
+      <a style="text-align: end; color: rgb(24, 24, 24); font-family: 'Inter', sans-serif; text-decoration: none;" href="/shivam"><h6>Credit Shivam Krishna</h6></a>
+    {% else %}
+      <a style="text-align: end; color: rgb(24, 24, 24); font-family: 'Inter', sans-serif; text-decoration: none;" href="#shivam"><h6>Credit Shivam Krishna</h6></a>
+    {% endif %}
+  </div>
+  <br>
+  {% block register %}{% endblock %}
+
+{% endblock %}

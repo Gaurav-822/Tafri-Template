@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block register %}
+{% block footer %}{% endblock %}
+<div class="container">
+    <div class="white">
+    <div class="w3-panel w3-round-large w3-pale-blue w3-animate-opacity">
+      <h1>TAFRI's EXCLUSIVE IMAGE GALLARY</h1>
+    </div>
+    <br>
+    
+    {% for i in range(1, 82) %}
+    <div class="w3-animate-zoom">
+      <img class="img-responsive" src="/static/image_gallary/1 ({{i}}).jpg" alt="exclusive_pics">
+    </div>
+    {% endfor %}
+    
+{% endblock %}

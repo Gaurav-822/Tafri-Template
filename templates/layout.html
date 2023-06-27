@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>TaFri</title>
+        <!-- Get Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Get google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap" rel="stylesheet">
+        <!-- Get W3schools css -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Specifing the character encoding -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!-- Icon -->
+        <link rel="icon" type="image/x-icon" href="/static/pics/santra.ico">
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+    <body>
+        <!-- AS A HOMEPAGE -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="/">TaFri</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">सदस्य<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <input autofocus class="form-control" id="myInput" type="text" placeholder="Search..">
+                          {% if session["user_id"] and req == 1 %}
+                          <li><a href="/gaurav">Gaurav</a></li>
+                          <li><a href="/adarsh">Adarsh</a></li>
+                          <li><a href="/dibyanshu">Dibyanshu</a></li>
+                          <li><a href="/shivam">Shivam</a></li>
+                          <li><a href="/sid">Siddharth Shanker</a></li>
+                          <li><a href="/aman">Aman</a></li>
+                          <li><a href="/ankit">Ankit</a></li>
+                          <li><a href="/arihant">Arihant</a></li>
+                          <li><a href="/aryan">Aryan</a></li>
+                          <li><a href="/bitopan">Bitopan</a></li>
+                          <li><a href="/debasish">Debasish</a></li>
+                          <li><a href="/deepjyoti">Deepjyoti</a></li>
+                          <li><a href="/kaushik">Kaushik</a></li>
+                          <li><a href="/priyangshu">Priyangshu</a></li>
+                          <li><a href="/arif">Arif</a></li>
+                          <li><a href="/ritik">Ritik</a></li>
+                          <li><a href="/rituparna">Rituparna</a></li>
+                          <li><a href="/ritwij">Ritwij</a></li>
+                          <li><a href="/sarthak_jha">Sarthak Jha</a></li>
+                          <li><a href="/sarthak_srivastav">Sarthak Srivastav</a></li>
+                          <li><a href="/sashwata">Sashwata</a></li>
+                          <li><a href="/saumyabrat">Saumyabrat</a></li>
+                          <li><a href="/sohel">Sohel</a></li>
+                          <li><a href="/srinjoy">Srinjoy</a></li>
+                          <li><a href="/sumit">Sumit</a></li>
+                          <li><a href="/siddharth_ghosh">Siddharth Ghosh</a></li>
+                          {% else %}
+                          <li><a href="#gaurav">Gaurav</a></li>
+                          <li><a href="#adarsh">Adarsh</a></li>
+                          <li><a href="#sexa">Dibyanshu</a></li>
+                          <li><a href="#shivam">Shivam</a></li>
+                          <li><a href="#sid">Siddharth Shanker</a></li>
+                          <li><a href="#aman">Aman</a></li>
+                          <li><a href="#ankit">Ankit</a></li>
+                          <li><a href="#arihant">Arihant</a></li>
+                          <li><a href="#aryan">Aryan</a></li>
+                          <li><a href="#bitopan">Bitopan</a></li>
+                          <li><a href="#debasish">Debasish</a></li>
+                          <li><a href="#deepjyoti">Deepjyoti</a></li>
+                          <li><a href="#kaushik">Kaushik</a></li>
+                          <li><a href="#priyangshu">Priyangshu</a></li>
+                          <li><a href="#arif">Arif</a></li>
+                          <li><a href="#ritik">Ritik</a></li>
+                          <li><a href="#rituparna">Rituparna</a></li>
+                          <li><a href="#ritwij">Ritwij</a></li>
+                          <li><a href="#sarthak_ee">Sarthak Jha</a></li>
+                          <li><a href="#srivastav">Sarthak Srivastav</a></li>
+                          <li><a href="#sashwata">Sashwata</a></li>
+                          <li><a href="#saumyabrat">Saumyabrat</a></li>
+                          <li><a href="#sohel">Sohel</a></li>
+                          <li><a href="#srinjoy">Srinjoy</a></li>
+                          <li><a href="#sumit">Sumit</a></li>
+                          <li><a href="#siddharth_ghosh">Siddharth Ghosh</a></li>
+
+                          {% endif %}
+                        </ul>
+                      <script>
+                        $(document).ready(function(){
+                          $("#myInput").on("keyup", function() {
+                            var value = $(this).val().toLowerCase();
+                            $(".dropdown-menu li").filter(function() {
+                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                            });
+                          });
+                        });
+                        </script>
+                </li>
+                
+                <!-- {% if session["user_id"] == False or req != 1 %}
+                <li><a href="/content">Message Us</a></li>
+                {% endif %} -->
+
+                <li>
+                  <a href="/study_materials">Exam Time</a>
+                </li>
+
+
+                <li class="w3-dropdown-hover">
+                    <li class="w3-dropdown-hover"><a>Contact Us</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                      <a href="https://www.instagram.com/tafri_nits/" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif; color: rgb(233, 64, 92); text-decoration: none;"><i style="font-size:24px" class="fa">&#xf16d;</i> INSTAGRAM</a>
+                      {% if session["user_id"] == False or req != 1 %}
+                      <a href="/content" class="w3-bar-item w3-button" style="font-family: 'Raleway', sans-serif; color: rgb(20, 17, 214); text-decoration: none;">
+                        Anonymous Message
+                      </a>
+                      {% endif %}
+                    </div>
+              </li>
+              
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                {% if session["user_id"] and req == 1 %}
+                <li><a href="/messages#mid"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+                <li><a href="/logout"><span class="glyphicon glyphicon-user"></span> Log Out</a></li>
+                {% else %}
+                <li><a href="/login#log"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="/register"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+                {% endif %}
+              </ul>
+            </div>
+            </div>
+          </nav>
+            {% block main %}{% endblock %}
+    </body>
+ </html>
